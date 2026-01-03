@@ -33,11 +33,27 @@
       "status": "approved"
     },
     {
+      "id": "database",
+      "name": "Database",
+      "slug": "database",
+      "description": "General information about the game",
+      "order": 5,
+      "status": "approved"
+    },
+    {
       "id": "wiki",
       "name": "Wiki",
       "slug": "wiki",
       "description": "Knowledge bases and wikis",
-      "order": 5,
+      "order": 6,
+      "status": "approved"
+    },
+    {
+      "id": "builds",
+      "name": "Builds",
+      "slug": "builds",
+      "description": "Gear builds and strategies",
+      "order": 7,
       "status": "approved"
     },
     {
@@ -45,7 +61,7 @@
       "name": "Guides",
       "slug": "guides",
       "description": "Tutorials and strategy guides",
-      "order": 6,
+      "order": 8,
       "status": "approved"
     },
     {
@@ -53,7 +69,7 @@
       "name": "Youtube",
       "slug": "youtube",
       "description": "YouTube channels and content creators",
-      "order": 7,
+      "order": 9,
       "status": "approved"
     },
     {
@@ -61,7 +77,23 @@
       "name": "Livestream",
       "slug": "livestream",
       "description": "Live streaming platforms and streamers",
-      "order": 8,
+      "order": 10,
+      "status": "approved"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "slug": "community",
+      "description": "Community hubs and resources",
+      "order": 11,
+      "status": "approved"
+    },
+    {
+      "id": "marketplace",
+      "name": "Marketplace",
+      "slug": "marketplace",
+      "description": "Marketplace and trading hubs",
+      "order": 12,
       "status": "approved"
     }
   ]

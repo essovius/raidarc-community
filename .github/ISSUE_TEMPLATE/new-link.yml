@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for suggesting a new resource! Please fill out the information below.
-        
+
         **Note:** This is just a suggestion. A maintainer will review and add it to the site if approved.
         If you want to add it directly, you can submit a Pull Request to `data/links.json` instead.
 
@@ -57,10 +57,14 @@ body:
         - Maps
         - General
         - Tracker
+        - Database
         - Wiki
+        - Builds
         - Guides
         - Youtube
         - Livestream
+        - Community
+        - Marketplace
     validations:
       required: true
 
@@ -74,10 +78,14 @@ body:
         - label: Maps
         - label: General
         - label: Tracker
+        - label: Database
         - label: Wiki
+        - label: Builds
         - label: Guides
         - label: Youtube
         - label: Livestream
+        - label: Community
+        - label: Marketplace
 
   - type: textarea
     id: why
