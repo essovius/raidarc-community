@@ -1,0 +1,15 @@
+{
+  "links": [
+    {
+      "id": "example-1",
+      "title": "ARC Raiders Wiki",
+      "url": "https://arcraiders.wiki",
+      "description": "Comprehensive wiki with game mechanics, weapons, and strategies",
+      "icon": "https://arcraiders.wiki/icon.png",
+      "categories": ["wiki"],
+      "submittedBy": "community",
+      "submittedAt": "2025-01-19T00:00:00Z",
+      "status": "approved"
+    }
+  ]
+}

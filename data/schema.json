@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "link": {
+      "type": "object",
+      "required": ["id", "title", "url", "categories", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Unique identifier (lowercase, hyphen-separated)"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Link title"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://",
+          "description": "Full URL starting with http:// or https://"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Brief description of the resource"
+        },
+        "icon": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to icon/logo image"
+        },
+        "categories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["official", "maps", "general", "tracker", "wiki", "guides", "youtube", "livestream"]
+          },
+          "description": "Categories this link belongs to"
+        },
+        "submittedBy": {
+          "type": "string",
+          "description": "GitHub username or 'community'"
+        },
+        "submittedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "approved", "rejected"],
+          "description": "Approval status"
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["id", "name", "slug", "description", "order", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Unique identifier"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "Display name"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "URL-friendly slug"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Category description"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Display order"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "approved", "rejected"],
+          "description": "Approval status"
+        }
+      }
+    }
+  }
+}

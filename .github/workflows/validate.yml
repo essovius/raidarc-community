@@ -1,0 +1,45 @@
+name: Validate Data
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install ajv ajv-formats
+
+      - name: Validate data files
+        run: node scripts/validate.js
+
+      - name: Check for duplicate links
+        run: |
+          echo "Checking for duplicate URLs in links.json..."
+          node -e "
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('data/links.json', 'utf8'));
+          const urls = data.links.map(l => l.url);
+          const duplicates = urls.filter((url, index) => urls.indexOf(url) !== index);
+          if (duplicates.length > 0) {
+            console.error('Duplicate URLs found:', [...new Set(duplicates)]);
+            process.exit(1);
+          }
+          console.log('No duplicate URLs found.');
+          "
+
+      - name: Validation successful
+        run: echo "✅ All data files are valid!"

@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "id": "official",
+      "name": "Official",
+      "slug": "official",
+      "description": "Official ARC Raiders resources from Embark Studios",
+      "order": 1,
+      "status": "approved"
+    },
+    {
+      "id": "maps",
+      "name": "Maps",
+      "slug": "maps",
+      "description": "Interactive maps and location guides",
+      "order": 2,
+      "status": "approved"
+    },
+    {
+      "id": "general",
+      "name": "General",
+      "slug": "general",
+      "description": "General resources and community hubs",
+      "order": 3,
+      "status": "approved"
+    },
+    {
+      "id": "tracker",
+      "name": "Tracker",
+      "slug": "tracker",
+      "description": "Stats tracking and leaderboards",
+      "order": 4,
+      "status": "approved"
+    },
+    {
+      "id": "wiki",
+      "name": "Wiki",
+      "slug": "wiki",
+      "description": "Knowledge bases and wikis",
+      "order": 5,
+      "status": "approved"
+    },
+    {
+      "id": "guides",
+      "name": "Guides",
+      "slug": "guides",
+      "description": "Tutorials and strategy guides",
+      "order": 6,
+      "status": "approved"
+    },
+    {
+      "id": "youtube",
+      "name": "Youtube",
+      "slug": "youtube",
+      "description": "YouTube channels and content creators",
+      "order": 7,
+      "status": "approved"
+    },
+    {
+      "id": "livestream",
+      "name": "Livestream",
+      "slug": "livestream",
+      "description": "Live streaming platforms and streamers",
+      "order": 8,
+      "status": "approved"
+    }
+  ]
+}

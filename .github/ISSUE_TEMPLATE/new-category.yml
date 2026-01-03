@@ -1,0 +1,73 @@
+name: 📁 Suggest a New Category
+description: Suggest a new category for organizing resources
+title: "[Category]: "
+labels: ["new-category", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new category! Please provide the details below.
+        
+        **Note:** New categories should represent a distinct type of resource that doesn't fit into existing categories.
+        Categories should be broad enough to contain multiple resources.
+
+  - type: input
+    id: name
+    attributes:
+      label: Category Name
+      description: The display name for this category
+      placeholder: "e.g., Podcasts"
+    validations:
+      required: true
+
+  - type: input
+    id: slug
+    attributes:
+      label: URL Slug
+      description: URL-friendly version (lowercase, hyphens only)
+      placeholder: "e.g., podcasts"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What types of resources belong in this category? (max 200 characters)
+      placeholder: "ARC Raiders podcast episodes, shows, and audio content from content creators"
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example Resources
+      description: List 3-5 existing resources that would fit this category
+      placeholder: |
+        - The ARC Cast (podcast)
+        - Raiders Radio Show
+        - Embark Studios Podcast
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why is this category needed?
+      description: Explain why existing categories don't fit these resources
+      placeholder: "Currently there's no good place for audio content. Podcasts don't fit well in Youtube or Guides..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: This category is distinct from existing categories
+          required: true
+        - label: There are multiple resources that would fit this category
+          required: true
+        - label: The category name is clear and descriptive
+          required: true

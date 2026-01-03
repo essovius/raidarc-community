@@ -1,0 +1,104 @@
+name: 🔗 Suggest a New Link
+description: Suggest a new resource to add to RaidARC.com
+title: "[Link]: "
+labels: ["new-link", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new resource! Please fill out the information below.
+        
+        **Note:** This is just a suggestion. A maintainer will review and add it to the site if approved.
+        If you want to add it directly, you can submit a Pull Request to `data/links.json` instead.
+
+  - type: input
+    id: title
+    attributes:
+      label: Resource Title
+      description: The name of the resource
+      placeholder: "e.g., ARC Raiders Interactive Map"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Full URL to the resource (must start with http:// or https://)
+      placeholder: "https://example.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of what this resource offers (max 500 characters)
+      placeholder: "Interactive map showing all extraction points, POIs, and loot locations..."
+    validations:
+      required: true
+
+  - type: input
+    id: icon
+    attributes:
+      label: Icon URL (optional)
+      description: URL to an icon or logo image for this resource
+      placeholder: "https://example.com/icon.png"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary Category
+      description: Which category does this resource belong to?
+      options:
+        - Official
+        - Maps
+        - General
+        - Tracker
+        - Wiki
+        - Guides
+        - Youtube
+        - Livestream
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: additional-categories
+    attributes:
+      label: Additional Categories (optional)
+      description: Select any other categories this resource fits into
+      options:
+        - label: Official
+        - label: Maps
+        - label: General
+        - label: Tracker
+        - label: Wiki
+        - label: Guides
+        - label: Youtube
+        - label: Livestream
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be added?
+      description: Tell us why this resource would be valuable to the community
+      placeholder: "This is the most accurate map available and is frequently updated..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: This resource is related to ARC Raiders
+          required: true
+        - label: The URL works and leads to the correct resource
+          required: true
+        - label: This resource is not already listed on RaidARC.com
+          required: true
+        - label: The resource is active and maintained
+          required: true
