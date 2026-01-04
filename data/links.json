@@ -6,9 +6,155 @@
       "url": "https://arcraiders.wiki",
       "description": "Comprehensive wiki with game mechanics, weapons, and strategies",
       "icon": "https://arcraiders.wiki/icon.png",
-      "categories": ["wiki"],
+      "categories": [
+        "wiki"
+      ],
       "submittedBy": "community",
       "submittedAt": "2025-01-19T00:00:00Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-5",
+      "title": "topside.tools",
+      "url": "https://topside.tools/",
+      "description": "Arc Raiders Quest Tracker & Items Database",
+      "icon": "https://topside.tools/icon-144x144.png",
+      "categories": [
+        "tracker"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:21:10.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-12",
+      "title": "arctracker.io",
+      "url": "https://arctracker.io",
+      "description": "Track your progress in ARC Raiders. Item database, skill tree, track quests, manage hideout upgrades, and share builds with friends.",
+      "icon": "https://arctracker.io/favicon.ico",
+      "categories": [
+        "maps",
+        "tracker",
+        "database",
+        "community"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2026-01-03T18:52:58.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-9",
+      "title": "ardb.app",
+      "url": "https://ardb.app/",
+      "description": "ARC Raiders Database",
+      "icon": "https://ardb.app/favicon/favicon-96x96.png",
+      "categories": [
+        "general",
+        "tracker",
+        "database"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:36:39.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-8",
+      "title": "arcraiders.build",
+      "url": "https://arcraiders.build/",
+      "description": "Arc Raiders Skill Tree Community",
+      "icon": "https://arcraiders.build/favicon-32.png",
+      "categories": [
+        "general",
+        "guides",
+        "builds",
+        "community",
+        "marketplace"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:32:02.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-11",
+      "title": "X / Twitter",
+      "url": "https://x.com/ARCRaidersGame/",
+      "description": "Official X Page",
+      "icon": "https://abs.twimg.com/favicons/twitter.3.ico",
+      "categories": [
+        "community",
+        "official"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:41:19.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-3",
+      "title": "Steam",
+      "url": "https://store.steampowered.com/app/1808500/ARC_Raiders/",
+      "description": "ARC Raiders on Steam",
+      "icon": "https://store.steampowered.com/favicon.ico",
+      "categories": [
+        "official"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-01-19T00:00:00Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-10",
+      "title": "Discord",
+      "url": "https://discord.gg/arcraiders",
+      "description": "Official Discord Community",
+      "icon": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6266bc493fb42d4e27bb8393_847541504914fd33810e70a0ea73177e.ico",
+      "categories": [
+        "official",
+        "community"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:38:45.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-4",
+      "title": "arcraidersmaps.app",
+      "url": "https://arcraidersmaps.app/",
+      "description": "ARC Raiders Interactive Maps",
+      "icon": "https://arcraidersmaps.app/favicon/favicon-96x96.png",
+      "categories": [
+        "maps"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:18:24.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-7",
+      "title": "Map Genie",
+      "url": "https://mapgenie.io/arc-raiders",
+      "description": "ARC Raiders Interactive Map",
+      "icon": "https://cdn.mapgenie.io/favicons/mapgenie/apple-touch-icon.png",
+      "categories": [
+        "maps"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:26:02.000Z",
+      "status": "approved"
+    },
+    {
+      "id": "db-6",
+      "title": "MetaForge",
+      "url": "https://metaforge.app/arc-raiders",
+      "description": "Complete ARC Raiders resource.",
+      "icon": "https://cdn.metaforge.app/logo.png",
+      "categories": [
+        "maps",
+        "general",
+        "tracker",
+        "guides"
+      ],
+      "submittedBy": "raidarc",
+      "submittedAt": "2025-11-19T14:23:36.000Z",
       "status": "approved"
     }
   ]

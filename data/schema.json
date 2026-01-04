@@ -37,13 +37,26 @@
           "minItems": 1,
           "items": {
             "type": "string",
-            "enum": ["official", "maps", "general", "tracker", "wiki", "guides", "youtube", "livestream"]
+            "enum": [
+              "official",
+              "maps",
+              "general",
+              "tracker",
+              "wiki",
+              "guides",
+              "youtube",
+              "livestream",
+              "community",
+              "marketplace",
+              "database",
+              "builds"
+            ]
           },
           "description": "Categories this link belongs to"
         },
         "submittedBy": {
           "type": "string",
-          "description": "GitHub username or 'community'"
+          "description": "GitHub username, 'community', or 'raidarc'"
         },
         "submittedAt": {
           "type": "string",
